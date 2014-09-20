@@ -1,0 +1,130 @@
+/* The general css */
+
+html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .title a { 
+    text-decoration: none; 
+}
+
+h2 {
+    text-align: center
+}
+
+body {
+    font-size: 16px;
+    color:#000;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;    
+}
+
+.nav {
+    padding: 1em 0 1.5em 0;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #eee;
+}
+
+.nav a {
+    text-transform: uppercase;
+}
+
+div {
+    display: block;
+}
+
+.right {
+    float: right;
+}
+
+a {
+    color: #F54848;
+}
+
+.nav a.right {
+    margin: 0 0 0 1em;
+}
+
+.left { 
+    float: left; 
+}
+
+h1 {
+    margin: 30px auto;
+}
+
+.centertext {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+h4, h5, h6, .title {
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 300;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.footer {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    color: #777;
+}
+
+.featurepromobox h2 {
+    text-align: center
+}
+
+.featurepromobox div {
+    padding: 0em 1em 0em 1em;
+}
+
+.logobox img.logo {
+    max-width: 80%;
+}
+
+img {
+    border: 0px;
+}
+
+img.aligncenter {
+    max-width: 30%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+p {
+    padding-bottom: 2em;
+}
+.bottomborder {
+    padding-bottom: 30px;
+}
+
+.trademark {
+    margin-top: 1em;
+    font-size: 0.75em;
+    text-align: center;
+    color: #777;
+}
+
+.bordertop {
+    border-top: 1px solid #eee;
+    padding-top: 1em;
+    margin-top: 30px;
+    max-width: 100%;
+}

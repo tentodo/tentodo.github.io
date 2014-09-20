@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="182px" height="202px" viewBox="0 0 182 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>record</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="67.6292783%" y2="117.580078%" id="linearGradient-1">
+            <stop stop-color="#FDE5DF" offset="0%"></stop>
+            <stop stop-color="#F26B62" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="58.3896703%" y1="-16.5248054%" x2="88.3573748%" y2="95.0376946%" id="linearGradient-2">
+            <stop stop-color="#FFACA0" offset="0%"></stop>
+            <stop stop-color="#F26B62" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="23.5451957%" y1="0%" x2="104.301438%" y2="129.646484%" id="linearGradient-3">
+            <stop stop-color="#F26B62" offset="0%"></stop>
+            <stop stop-color="#F26B62" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="record" sketch:type="MSLayerGroup" transform="translate(-20.000000, 0.000000)">
+            <g id="back_cover" transform="translate(81.102244, 26.007500)" sketch:type="MSShapeGroup">
+                <rect id="Rectangle-2" fill="#FFACA0" x="0" y="0" width="120.897756" height="175.4875"></rect>
+                <rect id="Rectangle-7" fill="#EB6767" x="113.341646" y="0" width="7.55610973" height="175.4875"></rect>
+            </g>
+            <g id="front_cover" transform="translate(20.149626, 0.000000)" sketch:type="MSShapeGroup">
+                <rect id="Rectangle-3" fill="#F26B62" x="0" y="0" width="120.897756" height="175.4875"></rect>
+                <rect id="Rectangle-6" fill="#FFACA0" x="0" y="0" width="7.55610973" height="175.4875"></rect>
+                <rect id="Rectangle-4" fill="#FFACA0" x="42.8179551" y="41.6625" width="56.6708229" height="11.3625"></rect>
+                <rect id="Rectangle-5" fill="#FFACA0" x="42.8179551" y="95.6975" width="56.6708229" height="11.3625"></rect>
+                <rect id="Rectangle-5" fill="#FFACA0" x="42.8179551" y="68.68" width="56.6708229" height="11.3625"></rect>
+                <ellipse id="Oval-3" fill="#FFACA0" cx="8.18578554" cy="12.24625" rx="5.66708229" ry="5.68125"></ellipse>
+                <ellipse id="Oval-4" fill="#FFACA0" cx="31.6097257" cy="74.10875" rx="5.66708229" ry="5.68125"></ellipse>
+                <ellipse id="Oval-5" fill="#FFACA0" cx="31.6097257" cy="101.12625" rx="5.66708229" ry="5.68125"></ellipse>
+                <ellipse id="Oval-6" fill="#FFACA0" cx="31.6097257" cy="47.59625" rx="5.66708229" ry="5.68125"></ellipse>
+                <ellipse id="Oval-7" fill="#F26B62" cx="31.7356608" cy="47.7225" rx="3.77805486" ry="3.7875"></ellipse>
+                <ellipse id="Oval-8" fill="#F26B62" cx="31.7356608" cy="74.235" rx="3.77805486" ry="3.7875"></ellipse>
+                <ellipse id="Oval-8" fill="#F26B62" cx="31.7356608" cy="101.2525" rx="3.77805486" ry="3.7875"></ellipse>
+            </g>
+            <g id="shadow" transform="translate(20.149626, 0.000000)" fill="#FDE5DF" sketch:type="MSShapeGroup">
+                <rect id="Rectangle-19" x="60.9526185" y="175.4875" width="63.2194514" height="3.2825"></rect>
+                <rect id="Rectangle-18" x="120.897756" y="26.0075" width="3.27431421" height="149.48"></rect>
+                <path d="M172.279302,26.0075 L120.897756,26.0075 L120.897756,0.123845238 L172.279302,26.0075 Z" id="Triangle-1"></path>
+                <path d="M60.9273504,175.4875 L60.9273504,196.523906 L0,175.4875 L60.9273504,175.4875 Z" id="Triangle-1"></path>
+            </g>
+            <g id="pencil" transform="translate(159.923709, 81.861243) rotate(-270.000000) translate(-159.923709, -81.861243) translate(80.962363, 75.548743)" sketch:type="MSShapeGroup">
+                <path d="M30.8541147,0 L30.8541147,12.625 L41.0548628,12.625 L41.0548628,0 L30.8541147,0 Z M30.8541147,0 L30.8541147,12.625 L4.15586035,6.06 L30.8541147,0 Z" id="Rectangle-48" fill="url(#linearGradient-1)"></path>
+                <g id="Rectangle-45-+-Rectangle-46-+-Rectangle-47" transform="translate(30.728180, 0.000000)">
+                    <rect id="Rectangle-49" fill="url(#linearGradient-2)" x="112.157114" y="0" width="15.0373996" height="12.625" rx="15"></rect>
+                    <path d="M9.98242923,8.8375 L1.13118771,12.625 L116.696353,12.625 L122.16268,8.8375 L9.98242923,8.8375 Z M9.98242923,3.7875 L9.98242923,8.8375 L122.16268,8.8375 L122.16268,3.7875 L9.98242923,3.7875 Z M1.35114898,0 L10.2023905,3.7875 L122.16268,3.7875 L117.04225,0 L1.35114898,0 Z" id="Rectangle-48" fill="#FDE5DF"></path>
+                    <path d="M0.370004381,0 L9.22124591,3.7875 L121.181535,3.7875 L116.061105,0 L0.370004381,0 Z" id="Rectangle-45" fill="#FDE5DF"></path>
+                    <rect id="Rectangle-46" fill="#FFACA0" x="8.96937558" y="3.7875" width="112.18025" height="5.05"></rect>
+                    <path d="M8.96937558,8.8375 L0.118134057,12.625 L115.6833,12.625 L121.149626,8.8375 L8.96937558,8.8375 Z" id="Rectangle-47" fill="#F26B62"></path>
+                </g>
+                <path d="M12.3451706,8.07372048 L4.15586035,6.06 L12.2410071,4.22482425 C12.4693563,4.87829761 12.5935162,5.58086301 12.5935162,6.3125 C12.5935162,6.92375721 12.5068524,7.51472238 12.3451706,8.07372048 Z" id="Triangle-5" fill="url(#linearGradient-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
