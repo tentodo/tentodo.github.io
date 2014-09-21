@@ -110,7 +110,10 @@ img.aligncenter {
 
 p {
     padding-bottom: 2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 300;
 }
+
 .bottomborder {
     padding-bottom: 30px;
 }
