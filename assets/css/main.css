@@ -1,7 +1,7 @@
 /* The general css */
 
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Helvetica', sans-serif;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .title a { 
@@ -9,21 +9,20 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .title a {
 }
 
 h2 {
-    text-align: center
+    text-align: center;
 }
 
 body {
-    font-size: 16px;
+    font-size: 22px;
     color:#000;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 16px;    
+    max-width: 100%;
+    margin: 0 auto;    
 }
 
 .nav {
-    padding: 1em 0 1.5em 0;
-    margin-bottom: 2em;
-    border-bottom: 1px solid #eee;
+    padding: 1.5em 0 2.5em 0;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 .nav a {
@@ -48,6 +47,11 @@ a {
 
 .left { 
     float: left; 
+    background-image: url("/assets/img/team_logo.png");
+    height: 40px;
+    width: 177px;
+    text-indent: -9999px;
+    white-space: nowrap;
 }
 
 h1 {
@@ -59,22 +63,22 @@ h1 {
 }
 
 h1 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-weight: 700;
 }
 
 h4, h5, h6, .title {
-font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Helvetica', sans-serif;
 font-weight: 300;
 }
 
 h2 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-weight: 600;
 }
 
 h3 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-weight: 300;
     font-size: 18px;
 }
@@ -95,22 +99,24 @@ h3 {
 }
 
 .logobox img.logo {
-    max-width: 80%;
-}
-
-img {
-    border: 0px;
+    max-width: 60%;
 }
 
 img.aligncenter {
-    max-width: 30%;
+    max-width: 10%;
     padding-left: 35%;
     padding-right: 35%;
 }
 
+img {
+    border: 0px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 p {
     padding-bottom: 2em;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 300;
 }
 
@@ -130,4 +136,40 @@ p {
     padding-top: 1em;
     margin-top: 30px;
     max-width: 100%;
+}
+
+.hero {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/*Blur*/
+.hero img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.hero img:hover {
+  -webkit-filter: blur(6px);
+}
+/*End Blur*/
+
+.backgroundfeature {
+    background-color: #ffffff;
+}
+
+.featurepromobox {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.overlay {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    overflow: hidden;
+    transition: all 0.5s;
 }
