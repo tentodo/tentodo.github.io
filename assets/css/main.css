@@ -1,7 +1,7 @@
 /* The general css */
 
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Avenir Next', sans-serif;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .title a { 
@@ -13,20 +13,17 @@ h2 {
 }
 
 body {
-    font-size: 22px;
+    font-size: 16px;
     color:#000;
     max-width: 100%;
     margin: 0 auto;    
 }
 
-.nav {
-    padding: 1.5em 0 2.5em 0;
-    padding-left: 3em;
-    padding-right: 3em;
-}
-
-.nav a {
-    text-transform: uppercase;
+header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
 }
 
 div {
@@ -35,23 +32,48 @@ div {
 
 .right {
     float: right;
+    line-height: 50px;
+    padding: 0 15px;
+    font-size: 14px;
 }
 
 a {
     color: #F54848;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
-.nav a.right {
-    margin: 0 0 0 1em;
+header a.right {
+    margin: 0 0 0 15px;
 }
 
-.left { 
+.menu {
+    height: 50px;
+    float: right;
+}
+
+header .left { 
     float: left; 
-    background-image: url("/assets/img/team_logo.png");
-    height: 40px;
-    width: 177px;
-    text-indent: -9999px;
-    white-space: nowrap;
+    height: 50px;
+}
+
+header .left .logo {
+    background-position: 6px 7px;
+    background-image: url("./assets/img/team_logo.png");
+    background-size: 88.5px 20px;
+    height: 30px;
+    width: 100px;
+    margin: 10px 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.wrapText {
+    padding: 0px 20px;
+    width: 1000px;
+    position: relative;
+    margin: 0px auto;
 }
 
 h1 {
@@ -63,22 +85,22 @@ h1 {
 }
 
 h1 {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Avenir Next', sans-serif;
     font-weight: 700;
 }
 
 h4, h5, h6, .title {
-font-family: 'Helvetica', sans-serif;
+font-family: 'Avenir Next', sans-serif;
 font-weight: 300;
 }
 
 h2 {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Avenir Next', sans-serif;
     font-weight: 600;
 }
 
 h3 {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Avenir Next', sans-serif;
     font-weight: 300;
     font-size: 18px;
 }
@@ -116,8 +138,8 @@ img {
 
 p {
     padding-bottom: 2em;
-    font-family: 'Helvetica', sans-serif;
-    font-size: 300;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 'Ultra Light';
 }
 
 .bottomborder {
@@ -143,7 +165,7 @@ p {
     overflow: hidden;
 }
 
-/*Blur*/
+/*Blur*
 .hero img {
   -webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
