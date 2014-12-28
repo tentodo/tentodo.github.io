@@ -79,6 +79,15 @@ header .left .logo {
     display: inline-block;
     background-repeat: no-repeat;
     opacity: 1;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    -moz-transition: -moz-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+}
+
+header .left .logo:hover {
+    -webkit-transform: rotateZ(-10deg);
+    -moz-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
 }
 
 .wrapText {
@@ -91,7 +100,6 @@ h1 {
     margin: 30px auto;
     text-align: center;
     color: #dc2b1d;
-    text-transform: uppercase;
     font-family: 'lato', sans-serif;
     font-weight: 700;
 }
