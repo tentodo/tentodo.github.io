@@ -1,7 +1,7 @@
 /* The general css */
 
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
-    font-family: 'Avenir Next', sans-serif;
+    font-family: 'lato', sans-serif;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .title a { 
@@ -92,7 +92,7 @@ h1 {
     text-align: center;
     color: #dc2b1d;
     text-transform: uppercase;
-    font-family: 'Avenir Next', sans-serif;
+    font-family: 'lato', sans-serif;
     font-weight: 700;
 }
 
@@ -102,18 +102,18 @@ h1 {
 
 
 h4, h5, h6, .title {
-    font-family: 'Avenir Next', sans-serif;
+    font-family: 'lato', sans-serif;
     font-weight: 300;
 }
 
 h2 {
-    font-family: 'Avenir Next', sans-serif;
-    font-weight: 600;
+    font-family: 'lato', sans-serif;
+    font-weight: 500;
     color: #dc2b1d;
 }
 
 h3 {
-    font-family: 'Avenir Next', sans-serif;
+    font-family: 'lato', sans-serif;
     font-weight: 300;
     font-size: 18px;
 }
@@ -148,7 +148,7 @@ p {
     padding-bottom: 2em;
     padding-left: 2em;
     padding-right: 2em;
-    font-family: 'Avenir Next', sans-serif;
+    font-family: 'lato', sans-serif;
     font-weight: 400;
 }
 
