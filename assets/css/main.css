@@ -292,10 +292,72 @@ br {
     color: white;
     margin: 15px auto;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 40px;
+    letter-spacing: 0px;
     -webkit-font-smoothing: antialiased;
 }
 
 .hero:hover .slogan {
     opacity: 1;
  }
+
+ @media screen and (max-width: 1024px) {
+    .slogan {
+        top: 25%;
+        margin: 20px auto;
+    }
+
+    .slogan h1 {
+        font-size: 30px;
+    }
+
+    .slogan p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .slogan {
+        top: 20%;
+        margin:  10px auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .slogan {
+         opacity: 1;
+    }
+
+    .slogan h1 {
+        font-size: 25px;
+    }
+
+    .slogan p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .slogan {
+        width: auto;
+        position: relative;
+        color: black;
+        margin: 0 auto;
+        left: auto;
+    }
+
+    .slogan h1 {
+        font-size: 30px;
+        color: black;
+    }
+
+    .appicon {
+        display: none;
+    }
+
+    .featurepromobox h1 {
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin: 0 auto;
+    }
