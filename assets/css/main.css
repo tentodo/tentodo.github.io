@@ -1,11 +1,12 @@
 /* The general css */
 
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
-    font-family: 'lato', sans-serif;
+    font-family: 'lato', 'Avenir Next', sans-serif;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .title a { 
     text-decoration: none; 
+    -webkit-font-smoothing: antialiased;
 }
 
 h2 {
@@ -13,15 +14,12 @@ h2 {
     margin: 15px 0;
 }
 
-h1 {
-
-}
-
 body {
     font-size: 16px;
     color:#000;
     max-width: 100%;
-    margin: 0 auto;    
+    margin: 0 auto; 
+    -webkit-font-smoothing: antialiased;   
 }
 
 header {
@@ -79,14 +77,18 @@ header .left .logo {
     display: inline-block;
     background-repeat: no-repeat;
     opacity: 1;
-    -webkit-transition: -webkit-transform 0.2s ease-out;
-    -moz-transition: -moz-transform 0.2s ease-out;
-    transition: transform 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 header .left .logo:hover {
     -webkit-transform: rotateZ(-10deg);
     -moz-transform: rotateZ(-10deg);
+    -o-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
     transform: rotateZ(-10deg);
 }
 
@@ -100,8 +102,9 @@ h1 {
     margin: 30px auto;
     text-align: center;
     color: #dc2b1d;
-    font-family: 'lato', sans-serif;
+    font-family: 'lato', 'Avenir Next', sans-serif;
     font-weight: 700;
+    letter-spacing: 2px;
 }
 
 .centertext {
@@ -110,18 +113,18 @@ h1 {
 
 
 h4, h5, h6, .title {
-    font-family: 'lato', sans-serif;
+    font-family: 'lato', 'Avenir Next', sans-serif;
     font-weight: 300;
 }
 
 h2 {
-    font-family: 'lato', sans-serif;
+    font-family: 'lato', 'Avenir Next', sans-serif;
     font-weight: 500;
     color: #dc2b1d;
 }
 
 h3 {
-    font-family: 'lato', sans-serif;
+    font-family: 'lato', 'Avenir Next', sans-serif;
     font-weight: 300;
     font-size: 18px;
 }
@@ -166,6 +169,7 @@ p {
 
 .trademark {
     margin-top: 1em;
+    margin-bottom: 2em;
     font-size: 0.75em;
     text-align: center;
     color: #777;
@@ -184,7 +188,7 @@ p {
     position: relative;
 }
 
-/*Blur*
+/*Blur*/
 .hero img {
   -webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
@@ -245,3 +249,53 @@ br {
 .memberbox {
     position: relative;
 }
+
+.slogan {
+    z-index: 200;
+    position: absolute;
+    top: 32%;
+    left: 5%;
+    color: white;
+    width: 45%;
+    margin: 30px auto;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.slogan p {
+    padding: 0 4em;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+}
+
+.appicon {
+    background-position: 0 0;
+    background-image: url("/assets/img/tenheroicon.png");
+    background-size: 160px 160px;
+    height: 160px;
+    width: 160px;
+    margin: 10px 5px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.slogan h1 {
+    text-transform: uppercase;
+    color: white;
+    margin: 15px auto;
+    font-weight: 300;
+    font-size: 30px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.hero:hover .slogan {
+    opacity: 1;
+ }
