@@ -173,10 +173,6 @@ p {
     font-weight: 300;
 }
 
-.bottomborder {
-    padding-bottom: 30px;
-}
-
 .trademark {
     margin: 1em 2em 2em 2em;
     font-size: 0.75em;
@@ -246,6 +242,7 @@ p {
     color: white;
     margin: 0px 0px;
     padding-top: 2em;
+    padding-bottom: 2em;
     font-weight: 300;   
 }
 
@@ -336,6 +333,11 @@ br {
     padding-bottom: 10px; 
  }
 
+.faqbox p {
+    line-height: 1.25;
+    padding: 0 0;
+    margin: 20px 30px 30px 30px;
+}
 
 /*start media query*/
 
@@ -409,6 +411,16 @@ br {
 
     .featurepromobox h2 {
         font-weight: 400;
+    }
+
+    .faqbox p {
+        line-height: 1.25;
+        padding: 0 0;
+        margin: 20px 15px 30px 15px;
+    }
+
+    .faqbox h3 {
+        margin: 20px 15px 0 15px;
     }
 }
 
