@@ -43,6 +43,13 @@ div {
     font-size: 14px;
 }
 
+.rightclick {
+    float: right;
+    line-height: 50px;
+    padding: 0 1em 0 0;
+    font-size: 14px;
+}
+
 a {
     color: #F54848;
     text-decoration: none;
