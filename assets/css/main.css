@@ -103,8 +103,8 @@ h1 {
     text-align: center;
     color: #dc2b1d;
     font-family: 'lato', 'Avenir Next', sans-serif;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .centertext {
@@ -144,6 +144,12 @@ h3 {
     padding: 0em 1em 0em 1em;
 }
 
+.featurepromobox h1 {
+    border-bottom: #f16359 solid 1px;
+    width: 400px;
+    padding-bottom: 10px;
+}
+
 img.aligncenter {
     max-width: 20%;
     padding-left: 40%;
@@ -155,8 +161,13 @@ img {
     max-width: 100%;
 }
 
+.desktopsize {
+    border: 0px;
+    max-width: 100%;
+}
+
 p {
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     padding-left: 2em;
     padding-right: 2em;
     font-family: 'lato', sans-serif;
@@ -190,11 +201,11 @@ p {
 
 /*Blur*/
 .hero img {
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
  
 .hero img:hover {
@@ -202,13 +213,18 @@ p {
 }
 /*End Blur*/
 
+
+.mobilesize {
+    display:none;
+}
+
 .backgroundfeature {
     background-color: #ffffff;
 }
 
 .featurepromobox {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .overlay {
@@ -260,11 +276,11 @@ br {
     margin: 30px auto;
     text-align: center;
     opacity: 0;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .slogan p {
@@ -300,6 +316,7 @@ br {
 .hero:hover .slogan {
     opacity: 1;
  }
+
 
  @media screen and (max-width: 1024px) {
     .slogan {
@@ -337,6 +354,12 @@ br {
     }
 }
 
+@media screen and (min-width: 480px) and (max-width: 760px) {
+    .pure-u-sm-1-3 {
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 640px) {
     .slogan {
         width: auto;
@@ -347,7 +370,7 @@ br {
     }
 
     .slogan h1 {
-        font-size: 30px;
+        font-size: 40px;
         color: black;
     }
 
@@ -356,8 +379,35 @@ br {
     }
 
     .featurepromobox h1 {
-        font-size: 30px;
-        font-weight: 500;
-        letter-spacing: 1px;
-        margin: 0 auto;
+        font-size: 23px;
+        font-weight: 400;
+        letter-spacing: 0;
+        margin: 20px 20px;
+        width: auto;
     }
+
+    .featurepromobox h2 {
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .desktopsize {
+        display: none;
+    }
+
+    .mobilesize {
+        display: block;
+        max-width: 100%;
+    }
+
+    .slogan h1 {
+        color: white;
+    }
+
+    .slogan {
+        position: absolute;
+        color: white;
+        top: 65%;
+    }
+}
