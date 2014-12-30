@@ -416,11 +416,11 @@ br {
     .faqbox p {
         line-height: 1.25;
         padding: 0 0;
-        margin: 20px 15px 30px 15px;
+        margin: 20px 10px 30px 10px;
     }
 
     .faqbox h3 {
-        margin: 20px 15px 0 15px;
+        margin: 20px 10px 0 10px;
     }
 }
 
