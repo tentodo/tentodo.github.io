@@ -22,7 +22,7 @@
             </a>
             <div class='menu'>
                 <a class="right" href="./faq.html">FAQ</a>
-                <a class="right" href="#teamintro">Team</a>
+                <a class="right" id="introButton" href="#">Team</a>
             </div>
             </div>    
         </header>
@@ -34,7 +34,7 @@
                 <div class="appicon"></div>
                 <h1><b>Ten</b> Todo</h1>
                 <p>Arrange and Improve your daily life. </p>
-
+                <a class="appstoreicon" href="#"></a>
             </div>
         </div>
 
@@ -84,11 +84,43 @@
                 </div>
             </div>
         <div class="footer bordertop">
-            2014 Double Square™ ©
+            © 2014<script>new Date().getFullYear()>2014&&document.write("-"+new Date().getFullYear());</script>, Double Square™
         </div>
         <div class="trademark">
             The app can only be distributed in Appstore, and Appstore is a service mark of Apple Inc.
         </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script>
+
+            function sloganResizer() {
+
+                var height = $('.hero').height();
+                var sloganHeight = $('.slogan').height();
+                var topMargin = (height - sloganHeight)/2;
+            if ($( window ).width() > 700) {
+                $( '.slogan' ).css('top', topMargin);
+            }
+            else {
+            }
+        };
+                sloganResizer();
+                $( window ).resize(sloganResizer);
+        </script>
+        <script>
+
+            function scrollToAnchor(id) {
+            var aTag = $("div[id='"+ id +"']");
+            $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+            }
+
+            $(".right#introButton").click(function() {
+                event.preventDefault();
+                scrollToAnchor('teamintro');
+            });
+
+        </script>
+
     </body>
 
 </html>
