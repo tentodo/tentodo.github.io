@@ -30,12 +30,13 @@
         <div class="hero">
             <img class="desktopsize" src="assets/img/hero.png">
             <img class="mobilesize" src="assets/img/hero_smalluse.png">
-            <div class="slogan">
+
+        </div>
+        <div class="slogan">
                 <div class="appicon"></div>
                 <h1><b>Ten</b> Todo</h1>
                 <p>Arrange and Improve your daily life. </p>
                 <a class="appstoreicon" href="#"></a>
-            </div>
         </div>
 
         <div class="backgroundfeature container pure-g"> 
@@ -90,7 +91,6 @@
             The app can only be distributed in Appstore, and Appstore is a service mark of Apple Inc.
         </div>
         <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrollTo.min.js"></script>
         <script>
 
             function sloganResizer() {
@@ -120,7 +120,21 @@
             });
 
         </script>
+        <script>
+            function transparentOverlay() {
+            if ($( window ).width() >400) {
+                var imgHeight = $('.hero img.desktopsize').height();
+                $('.hero').css('height', imgHeight);
+            }
+            else {
+                var imgHeight = $('.hero img.mobilesize').height();
+                $('.hero').css('height', imgHeight);
+            }
+        };
 
+            transparentOverlay();
+            $( window ).resize(transparentOverlay);
+        </script>
     </body>
 
 </html>
