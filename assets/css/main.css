@@ -449,7 +449,7 @@ br {
         margin: 30px auto 0 auto;
     }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 479px) {
     .desktopsize {
         display: none;
     }
