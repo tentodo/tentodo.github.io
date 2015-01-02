@@ -92,7 +92,6 @@
         </div>
         <script src="assets/js/jquery.min.js"></script>
         <script>
-
             function sloganResizer() {
 
                 var height = $('.hero').height();
@@ -102,13 +101,15 @@
             if ($( window ).width() > 700) {
                 $( '.slogan' ).css('top', topMargin);
             }
-            if {$( window ).width() < 400 {
+            if {$( window ).width() < 401 {
             	$('.slogan').css('top', topMarginMobile);
             }
             else {
             }
         };
-                sloganResizer();
+	
+		$(window).load(function() {
+                sloganResizer();}
                 $( window ).resize(sloganResizer);
         </script>
         <script>
@@ -126,7 +127,7 @@
         </script>
         <script>
             function transparentOverlay() {
-            if ($( window ).width() >400) {
+            if ($( window ).width() > 400) {
                 var imgHeight = $('.hero img.desktopsize').height();
                 $('.hero').css('height', imgHeight);
             }
