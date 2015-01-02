@@ -97,17 +97,17 @@
                 var height = $('.hero').height();
                 var sloganHeight = $('.slogan').height();
                 var topMargin = (height - sloganHeight)/2;
-                var topMarginMobile = (height - sloganHeight)/3*2;
+                var topMarginMobile = (height - sloganHeight)/4*3;
             if ($( window ).width() > 700) {
                 $( '.slogan' ).css('top', topMargin);
             }
-            if ($( window ).width() < 401) {
+            else if ($( window ).width() < 401) {
             	$('.slogan').css('top', topMarginMobile);
             }
             else {
             }
         };
-	
+		 
 		$( window ).load(function() {
                 sloganResizer();
                 $( window ).resize(sloganResizer);
@@ -137,9 +137,11 @@
                 $('.hero').css('height', imgHeight);
             }
         };
-
+	$( window ).load(function() {
             transparentOverlay();
             $( window ).resize(transparentOverlay);
+	});
+	
         </script>
     </body>
 
