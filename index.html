@@ -28,16 +28,16 @@
         </header>
 
         <div class="hero">
-            <img class="desktopsize" src="assets/img/hero.png">
-            <img class="mobilesize" src="assets/img/hero_smalluse.png">
-
-        </div>
-        <div class="slogan">
+            <img class="desktopsize" src="assets/img/hero_resived.png">
+            <img class="mobilesize" src="assets/img/hero_smalluse_revised.png">
+             <div class="slogan">
                 <div class="appicon"></div>
-                <h1><b>Ten</b> Todo</h1>
-                <p>Arrange and Improve your daily life. </p>
+                    <h1><b>Ten</b> Todo</h1>
+                    <p>Arrange and Improve your daily life. </p>
                 <a class="appstoreicon" href="#"></a>
+            </div>
         </div>
+
 
         <div class="backgroundfeature container pure-g"> 
             <div class="featurepromobox pure-u-1 pure-u-sm-1-1">
@@ -92,28 +92,13 @@
         </div>
         <script src="assets/js/jquery.min.js"></script>
         <script>
-            function transparentOverlay() {
-            if ($( window ).width() >= 480) {
-                var imgHeight = $('.hero img.desktopsize').height();
-                $('.hero').css('height', imgHeight);
-            }
-            else {
-                var imgHeight = $('.hero img.mobilesize').height();
-                $('.hero').css('height', imgHeight);
-            }
-        };
-	$( window ).load(function() {
-            transparentOverlay();
-            $( window ).resize(transparentOverlay);
-	});
-        </script>
-        <script>
             function sloganResizer() {
 
                 var height = $('.hero').height();
                 var sloganHeight = $('.slogan').height();
                 var topMargin = (height - sloganHeight)/2;
-                var topMarginMobile = (height - sloganHeight)/5*4;
+                var topMarginMobile = (height - sloganHeight)/10*9;
+            
             if ($( window ).width() > 700) {
                 $( '.slogan' ).css('top', topMargin);
             }
@@ -123,7 +108,8 @@
             else {
             }
         };
-		$( window ).load(function() {
+
+		      $( window ).load(function() {
                 sloganResizer();
                 $( window ).resize(sloganResizer);
 		});
