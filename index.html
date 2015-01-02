@@ -92,6 +92,22 @@
         </div>
         <script src="assets/js/jquery.min.js"></script>
         <script>
+            function transparentOverlay() {
+            if ($( window ).width() >= 480) {
+                var imgHeight = $('.hero img.desktopsize').height();
+                $('.hero').css('height', imgHeight);
+            }
+            else {
+                var imgHeight = $('.hero img.mobilesize').height();
+                $('.hero').css('height', imgHeight);
+            }
+        };
+	$( window ).load(function() {
+            transparentOverlay();
+            $( window ).resize(transparentOverlay);
+	});
+        </script>
+        <script>
             function sloganResizer() {
 
                 var height = $('.hero').height();
@@ -101,13 +117,12 @@
             if ($( window ).width() > 700) {
                 $( '.slogan' ).css('top', topMargin);
             }
-            else if ($( window ).width() < 401) {
+            else if ($( window ).width() <= 480) {
             	$('.slogan').css('top', topMarginMobile);
             }
             else {
             }
         };
-		 
 		$( window ).load(function() {
                 sloganResizer();
                 $( window ).resize(sloganResizer);
@@ -126,23 +141,7 @@
             });
 
         </script>
-        <script>
-            function transparentOverlay() {
-            if ($( window ).width() > 400) {
-                var imgHeight = $('.hero img.desktopsize').height();
-                $('.hero').css('height', imgHeight);
-            }
-            else {
-                var imgHeight = $('.hero img.mobilesize').height();
-                $('.hero').css('height', imgHeight);
-            }
-        };
-	$( window ).load(function() {
-            transparentOverlay();
-            $( window ).resize(transparentOverlay);
-	});
-	
-        </script>
+
     </body>
 
 </html>
