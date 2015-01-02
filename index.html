@@ -98,8 +98,12 @@
                 var height = $('.hero').height();
                 var sloganHeight = $('.slogan').height();
                 var topMargin = (height - sloganHeight)/2;
+                var topMarginMobile = (height - sloganHeight)/3*2;
             if ($( window ).width() > 700) {
                 $( '.slogan' ).css('top', topMargin);
+            }
+            if {$( window ).width() < 400 {
+            	$('.slogan').css('top', topMarginMobile);
             }
             else {
             }
