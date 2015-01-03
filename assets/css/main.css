@@ -269,7 +269,7 @@ br {
     width: 45%;
     margin: 30px auto;
     text-align: center;
-    /*opacity: 0;*/
+    opacity: 0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -313,7 +313,7 @@ br {
 */
  .faq {
     position: relative;
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto;
  }
 
