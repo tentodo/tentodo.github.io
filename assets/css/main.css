@@ -30,6 +30,7 @@ header {
     opacity: 0.8;
     z-index: 300;
     box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+    top:0%;
 }
 
 div {
@@ -95,7 +96,6 @@ header .left .logo:hover {
 .wrapText {
     padding: 0px 10px;
     position: relative;
-    margin: 0px auto;
 }
 
 h1 {
@@ -133,6 +133,10 @@ h3 {
     text-align: center;
     margin: 0 30px;
     color: #777;
+}
+
+.footercolor {
+    background-color: rgba(250, 250, 250, 0.8)
 }
 
 .featurepromobox h2 {
@@ -174,7 +178,7 @@ p {
 }
 
 .trademark {
-    margin: 1em 2em 2em 2em;
+    padding: 1em 2em 2em 2em;
     font-size: 0.75em;
     text-align: center;
     color: #777;
@@ -183,7 +187,6 @@ p {
 .bordertop {
     border-top: 1px solid #eee;
     padding-top: 1em;
-    margin-top: 20px;
 }
 
 .hero {
@@ -231,6 +234,7 @@ p {
 
 .teamfeature {
     background-color: #394051;
+    text-align: center;
 }
 
 .teamfeature h1 {
@@ -244,6 +248,7 @@ p {
     padding-top: 2em;
     padding-bottom: 2em;
     font-weight: 300;   
+    text-align: left;
 }
 
 .introductionbox {
@@ -270,11 +275,11 @@ br {
     margin: 30px auto;
     text-align: center;
     opacity: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .slogan p {
@@ -318,12 +323,13 @@ br {
  }
 
  .faqbox {
-    margin: 50px 2em 20px 2em;
+    margin-top: 0px;
     display: block;
  }
 
 .faqbox h1 {
-    margin: 30px 30px 25px 30px;
+    margin-top: 0px;
+    padding-top: 80px;
     font-weight: 400;
 }
 
@@ -352,11 +358,27 @@ br {
     opacity: 1;
 }
 
+.faqcard {
+    -moz-box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 25px 30px 30px 30px;
+    margin-bottom: 50px;
+}
+
+.grey {
+    background-color: rgba(250, 250, 250, 0.45);
+}
+
 /*start media query*/
 
  @media screen and (max-width: 1024px) {
+    .faqcard {
+        margin-left: 10%;    
+        margin-right: 10%;
+    }
     .slogan {
-        /*top: 25%;*/
         margin: 20px auto;
     }
 
@@ -371,15 +393,11 @@ br {
 
 @media screen and (max-width: 860px) {
     .slogan {
-        /*top: 20%;*/
         margin:  10px auto;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .slogan {
-         opacity: 1;
-    }
 
     .slogan h1 {
         font-size: 25px;
@@ -442,6 +460,7 @@ br {
     }
 
 @media screen and (max-width: 479px) {
+
     .desktopsize {
         display: none;
     }
