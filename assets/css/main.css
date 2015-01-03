@@ -1,7 +1,7 @@
 /* The general css */
 
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
-    font-family: 'lato', 'Avenir Next', sans-serif;
+    font-family: 'lato', 'Avenir Next', "Arial", sans-serif;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .title a { 
@@ -102,7 +102,7 @@ h1 {
     margin: 30px auto;
     text-align: center;
     color: #dc2b1d;
-    font-family: 'lato', 'Avenir Next', sans-serif;
+    font-family: 'lato', 'Avenir Next', "Arial", sans-serif;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -113,18 +113,18 @@ h1 {
 
 
 h4, h5, h6, .title {
-    font-family: 'lato', 'Avenir Next', sans-serif;
+    font-family: 'lato', 'Avenir Next', "Arial", sans-serif;
     font-weight: 300;
 }
 
 h2 {
-    font-family: 'lato', 'Avenir Next', sans-serif;
+    font-family: 'lato', 'Avenir Next', "Arial", sans-serif;
     font-weight: 500;
     color: #dc2b1d;
 }
 
 h3 {
-    font-family: 'lato', 'Avenir Next', sans-serif;
+    font-family: 'lato', 'Avenir Next', "Arial", sans-serif;
     font-weight: 300;
     font-size: 18px;
 }
@@ -313,6 +313,8 @@ br {
 */
  .faq {
     position: relative;
+    max-width: 800px;
+    margin: 0 auto;
  }
 
  .faqbox {
