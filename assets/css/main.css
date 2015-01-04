@@ -125,7 +125,7 @@ h2 {
 
 h3 {
     font-family: 'lato', 'Avenir Next', "Arial", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
 }
 
@@ -165,16 +165,15 @@ img {
 }
 
 .desktopsize {
-    border: 0px;
-    max-width: 100%;
+    width: 100%;
 }
 
 p {
     padding-bottom: 1em;
     padding-left: 2em;
     padding-right: 2em;
-    font-family: 'lato', sans-serif;
-    font-weight: 300;
+    font-family: 'lato', 'Avenir Next' sans-serif;
+    font-weight: 400;
 }
 
 .trademark {
@@ -247,7 +246,7 @@ p {
     margin: 0px 0px;
     padding-top: 2em;
     padding-bottom: 2em;
-    font-weight: 300;   
+    font-weight: 400;   
     text-align: left;
 }
 
@@ -274,6 +273,10 @@ br {
     width: 45%;
     margin: 30px auto;
     text-align: center;
+    opacity: 1;
+}
+
+.appear {
     opacity: 0;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -285,7 +288,7 @@ br {
 .slogan p {
     padding: 0 4em;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
 }
@@ -331,6 +334,8 @@ br {
     margin-top: 0px;
     padding-top: 80px;
     font-weight: 400;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
  .faqbox h3 {
@@ -373,11 +378,43 @@ br {
 
 /*start media query*/
 
- @media screen and (max-width: 1024px) {
-    .faqcard {
-        margin-left: 10%;    
-        margin-right: 10%;
+
+@media screen and (min-width: 1900px) {
+    .appicon {
+        background-size: 320px 320px;
+        height: 320px;
+        width: 320px;
     }
+
+    .slogan h1 {
+        font-size: 60px;
+    }
+
+    .slogan p {
+        font-size: 25px;
+    }
+
+    .slogan a.appstoreicon {
+        background-size: 200px 60px;
+        height: 60px;
+        width: 200px;
+    }
+
+    p {
+        font-size: 1.3vw;
+    }
+
+    .introductionbox {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .faqcard {
+        margin-left: 5%;    
+        margin-right: 5%;
+    }
+
     .slogan {
         margin: 20px auto;
     }
@@ -460,6 +497,9 @@ br {
     }
 
 @media screen and (max-width: 479px) {
+    .wrapText {
+        padding: 0px 0px;
+    }
 
     .desktopsize {
         display: none;
@@ -467,7 +507,7 @@ br {
 
     .mobilesize {
         display: block;
-        max-width: 100%;
+        width: 100%;
     }
 
     .slogan h1 {

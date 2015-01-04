@@ -7,7 +7,7 @@
 		<meta name="google" content="notranslate">
 		<meta name="description" content="Designed by Double-Squares">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" type="image/icon" href="http://tentodo.github.io/favicon.ico">
+        <link rel="shortcut icon" type="image/icon" href="/favicon.png">
         <link rel="stylesheet" type="text/css" href="assets/css/pure-min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/grids-responsive-min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/main.css">
@@ -32,11 +32,13 @@
         <div class="hero">
             <img class="desktopsize" src="assets/img/hero_resived.png">
             <img class="mobilesize" src="assets/img/hero_smalluse_revised.png">
+             <div class="appear">
              <div class="slogan">
                 <div class="appicon"></div>
                     <h1><b>Ten</b> Todo</h1>
                     <p>Arrange and Improve your daily life. </p>
                 <a class="appstoreicon" href="#"></a>
+            </div>
             </div>
         </div>
 
@@ -108,18 +110,19 @@
                 var topMarginMobile = (height - sloganHeight)/10*9;
             
             if ($( window ).width() > 700) {
-                $( '.slogan' ).css('top', topMargin);
+                $( '.slogan' ).css('top', topMargin + 15);
             }
             else if ($( window ).width() <= 480) {
             	$('.slogan').css('top', topMarginMobile);
             }
             else {
+                $('.slogan').css('top', 'auto');
             }
         };
 
 		      $( window ).load(function() {
                 sloganResizer();
-                $('.slogan').css('opacity', '1');
+                $('.appear').css('opacity', '1');
 		});
               $( window ).resize(sloganResizer);
         </script>
