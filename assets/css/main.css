@@ -1,12 +1,15 @@
 /* The general css */
 
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
-    font-family: 'lato', 'Avenir Next', "Arial", sans-serif;
+    font-family: 'lato', 'Avenir Next', 'Arial', sans-serif;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .title a { 
     text-decoration: none; 
-    -webkit-font-smoothing: antialiased;
 }
 
 h2 {
@@ -19,7 +22,6 @@ body {
     color:#000;
     max-width: 100%;
     margin: 0 auto; 
-    -webkit-font-smoothing: antialiased;   
 }
 
 header {
@@ -102,7 +104,7 @@ h1 {
     margin: 30px auto;
     text-align: center;
     color: #dc2b1d;
-    font-family: 'lato', 'Avenir Next', "Arial", sans-serif;
+    font-family: 'lato', 'Avenir Next', 'Arial', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -113,18 +115,18 @@ h1 {
 
 
 h4, h5, h6, .title {
-    font-family: 'lato', 'Avenir Next', "Arial", sans-serif;
+    font-family: 'lato', 'Avenir Next', 'Arial', sans-serif;
     font-weight: 300;
 }
 
 h2 {
-    font-family: 'lato', 'Avenir Next', "Arial", sans-serif;
+    font-family: 'lato', 'Avenir Next', 'Arial', sans-serif;
     font-weight: 500;
     color: #dc2b1d;
 }
 
 h3 {
-    font-family: 'lato', 'Avenir Next', "Arial", sans-serif;
+    font-family: 'lato', 'Avenir Next', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 18px;
 }
@@ -161,7 +163,6 @@ img.aligncenter {
 
 img {
     border: 0px;
-    max-width: 100%;
 }
 
 .desktopsize {
@@ -172,7 +173,7 @@ p {
     padding-bottom: 1em;
     padding-left: 2em;
     padding-right: 2em;
-    font-family: 'lato', 'Avenir Next' sans-serif;
+    font-family: 'lato', 'Avenir Next', 'Arial', sans-serif;
     font-weight: 400;
 }
 
@@ -193,21 +194,6 @@ p {
     overflow: hidden;
     position: relative;
 }
-
-/*Blur*
-.hero img {
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-}
- 
-.hero img:hover {
-  -webkit-filter: blur(3px);
-}
-/*End Blur*/
-
 
 .mobilesize {
     display:none;
@@ -290,7 +276,6 @@ br {
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
 }
 
 .appicon {
@@ -312,17 +297,14 @@ br {
     font-weight: 300;
     font-size: 40px;
     letter-spacing: 0px;
-    -webkit-font-smoothing: antialiased;
 }
 
-/*.hero:hover .slogan {
-    opacity: 1;
- }
-*/
  .faq {
     position: relative;
     max-width: 960px;
     margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
  }
 
  .faqbox {
@@ -342,7 +324,7 @@ br {
     margin: 20px 30px 0 30px;
     font-weight: 400;
     color: #f16359;
-    border-bottom: #f16359 1px dotted;
+    border-bottom: #f16359 1px solid;
     padding-bottom: 10px; 
  }
 
@@ -376,9 +358,73 @@ br {
     background-color: rgba(250, 250, 250, 0.45);
 }
 
+.hrstyle {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 680px;
+    background-color: #E1E1E1;
+    height: 1px;
+    border: 0px;
+    clear: both;
+    position: relative;
+}
+
+hr.team {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 680px;
+    background-color: #E1E1E1;
+    height: 1px;
+    border: 0px;
+    clear: both;
+    position: relative;
+}
+
+hr.team:after {
+    background: white url("/assets/img/fun.png") no-repeat 50% 50%;
+    content: " ";
+    left: 50%;
+    margin-left: -40px;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    width: 80px;
+    background-size: 25px 25px;
+}
+
+hr {
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+}
+
+.teammember {
+    margin: 0 auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    max-width: 960px;
+}
+
+.memberphoto {
+    max-width: 100%
+}
+
+.memberintro {
+    padding-top: 30px;
+}
+
+.memberintro h1 {
+    margin-top: 0px;
+}
+
+.memberintro h2 {
+    margin-top: 0px;
+}
+
 /*start media query*/
-
-
 @media screen and (min-width: 1900px) {
     .appicon {
         background-size: 320px 320px;
@@ -410,11 +456,6 @@ br {
 }
 
 @media screen and (max-width: 1024px) {
-    .faqcard {
-        margin-left: 5%;    
-        margin-right: 5%;
-    }
-
     .slogan {
         margin: 20px auto;
     }
@@ -517,6 +558,10 @@ br {
     .slogan {
         position: absolute;
         color: white;
+    }
+
+    .faqcard {
+        padding: 25px 20px 30px 20px;
     }
 
     .slogan a.appstoreicon {
