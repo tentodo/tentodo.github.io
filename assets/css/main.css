@@ -151,7 +151,7 @@ h3 {
 
 .featurepromobox h1 {
     border-bottom: #f16359 solid 1px;
-    width: 400px;
+    max-width: 500px;
     padding-bottom: 10px;
 }
 
@@ -352,6 +352,7 @@ br {
     background-color: white;
     padding: 25px 30px 30px 30px;
     margin-bottom: 50px;
+    border-radius: 4px;
 }
 
 .grey {
