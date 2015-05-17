@@ -410,7 +410,8 @@ hr {
 }
 
 .memberphoto {
-    max-width: 100%
+    max-width: 70%;
+    padding-top: 2em;
 }
 
 .memberintro {
